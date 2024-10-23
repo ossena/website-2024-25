@@ -1,0 +1,40 @@
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+nav{ 
+    background-color: aqua;
+    padding:1%
+ }
+
+ h1{ 
+
+    background-color: red;
+    color:aliceblue
+  }
+
+  p{
+    background-color: green;
+    font-weight: 100;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2%;
+  }
+
+  .rossoBlu{ 
+    background-color: red;
+    color:blue;
+    
+   }
+
+   .container{
+      display: flex;
+      background-color: chartreuse;
+   }
+
+.container2{
+  background-color: blueviolet;
+
+}
+
