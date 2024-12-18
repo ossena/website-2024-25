@@ -17,8 +17,13 @@ console.log("Questa é pincoPallaVar" + pincoPallaVar);
 
 const esempio1 = 789;
 
-console.log(esempio1)
+console.log(esempio1);
+
+//esempio1 = castagne
 
 esempio1 = "castagne"; 
 
-console.log(esempio1)
+console.log(esempio1);
+
+//(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)(._.)
+
