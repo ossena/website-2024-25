@@ -8,7 +8,7 @@ bottoneAggiungi.addEventListener('click', function () {
 
     
     const nuovoElemento = document.createElement('li');
-
+    nuovoElemento.textContent = "Elemento " + (lista.children.length + 1)
 
 })
 
