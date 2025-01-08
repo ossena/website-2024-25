@@ -27,19 +27,17 @@ bottoneAggiungi.addEventListener('click', function () {
         nuovoElemento.remove();
 
     })
-
-    bottoneSvuota.addEventListener('click', function (){
-        const confermaCanc = confirm("Sei sicuro di voler svuotare la lista?");
-    if (confermaCanc) {
-        if (lista.children.length > 0) {
-            lista.innerHTML = '';
-         }
-    }
-
-    
-    })
-
 });
 
+bottoneSvuota.addEventListener('click', function (){
+    const confermaCanc = confirm("Sei sicuro di voler svuotare la lista?");
+if (confermaCanc) {
+    if (lista.children.length > 0) {
+        lista.innerHTML = '';
+     }
+}
+
+
+});
 
 
