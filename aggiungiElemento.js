@@ -1,8 +1,9 @@
 //Seleziona il bottone di aggiunta
 
 const bottoneAggiungi = document.getElementById('bottoneAggiungi');
-const bottoneTogli = document.getElementById('bottoneTogli');
+//const bottoneTogli = document.getElementById('bottoneTogli');
 const lista = document.getElementById('miaLista');
+const bottoneSvuota = document.getElementById('svuota');
 
 console.log(lista.children.length);
 
@@ -13,6 +14,8 @@ bottoneAggiungi.addEventListener('click', function () {
     const userInput = prompt("inserisci un testo");
     const iconaCestino = document.createElement('span');
 
+
+
     nuovoElemento.textContent = userInput;
     iconaCestino.textContent = " 🗑️"
     iconaCestino.style.cursor = "pointer";
@@ -22,6 +25,21 @@ bottoneAggiungi.addEventListener('click', function () {
 
     iconaCestino.addEventListener('click',function(){
         nuovoElemento.remove();
+
     })
 
-})
+    bottoneSvuota.addEventListener('click', function (){
+        const confermaCanc = confirm("Sei sicuro di voler svuotare la lista?");
+    if (confermaCanc) {
+        if (lista.children.length > 0) {
+            lista.innerHTML = '';
+         }
+    }
+
+    
+    })
+
+});
+
+
+
