@@ -40,4 +40,20 @@ if (confermaCanc) {
 
 });
 
+function controllaSeListaVuota(){
+   if (lista.children.length === 0) {
+    const messaggioVuota = document.createElement("li");
+    messaggioVuota.textContent = "La lista è vuota";
+    messaggioVuota.id = 'messaggioVuota';
+    lista.appendChild(messaggioVuota);
+   } else {
+        const messaggioVuota = document.getElementById
+        if (messaggioVuota){
+            messaggioVuota.remove(); //Rimuove il messaggio
+        }
+   }
+}
+
+controllaSeListaVuota();
+
 
