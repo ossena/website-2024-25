@@ -59,7 +59,7 @@ function controllaSeListaVuota(){
 
 function salvaLista(){
 
-    console.log("Ciao");
+    alert("Ciao");
 }
 
 
