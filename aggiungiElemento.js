@@ -4,6 +4,8 @@ const bottoneAggiungi = document.getElementById('bottoneAggiungi');
 //const bottoneTogli = document.getElementById('bottoneTogli');
 const lista = document.getElementById('miaLista');
 const bottoneSvuota = document.getElementById('svuota');
+const bottoneSalva = document.getElementById('saveButton');
+
 
 console.log(lista.children.length);
 
@@ -54,6 +56,14 @@ function controllaSeListaVuota(){
    }
 }
 
+
+function salvaLista(){
+
+    console.log("Ciao");
+}
+
+
+bottoneSalva.addEventListener('click', salvaLista);
+
+
 controllaSeListaVuota();
-
-
