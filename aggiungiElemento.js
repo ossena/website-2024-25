@@ -57,9 +57,25 @@ function controllaSeListaVuota(){
 }
 
 
-function salvaLista(){
 
-    alert("Ciao");
+function salvaLista(){
+    const elementiLista = []; //array che incorpora gli elementi <li>
+
+    //itera sugli elementi della lista 
+    Array.from(lista.children).forEach((elemento)=>{
+        if(elemento.id !== "messaggioVuota"){
+            elementiLista.push(elemento.textContent.replace('🗑️', '')).trim();
+        }
+    })
+
+    if(elementiLista.length === 0){
+        alert("La lista è vuota");
+    }
+
+    const jsonData = JSON.stringify(elementiLista, null, 2); //formattazione a 2 spazzi
+    const blob = new Blob([jsonData],{ type: 'application/json'});
+
+
 }
 
 
