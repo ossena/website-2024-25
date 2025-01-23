@@ -66,3 +66,23 @@ function sePari(numnero){
 }
 
 sePari(4);
+
+
+function test1(){
+    alert("Questo è un test");
+}
+
+function divisione(a,b){
+    let risultato = a / b;
+    return risultato
+}
+
+let variabile1 = divisione();
+console.log(variabile1);
+
+function calcolo(a,b,funzDiCalcolo){
+
+    return funzDiCalcolo(a,b);
+}
+
+calcolo(40,7,divisione);
