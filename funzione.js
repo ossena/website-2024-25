@@ -85,4 +85,4 @@ function calcolo(a,b,funzDiCalcolo){
     return funzDiCalcolo(a,b);
 }
 
-calcolo(40,7,divisione);
+console.log(calcolo(40,7,divisione));
