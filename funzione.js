@@ -40,10 +40,8 @@ divisione(30,3);
 function sottrazione(g,h){
     let sottrazione = g-h;
     console.log("il risultato della sottrazione è = " + sottrazione)
-}
-sottrazione(30,15)
-
-
+  }
+//sottrazione(30,15)
 
 //ritorno di un valore
 function somma2(a,b){
@@ -52,9 +50,7 @@ function somma2(a,b){
 let risultatoSomma = somma2(34,56);
 console.log("il risultato somma2 è = " + risultatoSomma);
 
-
 //-----------funzione che verifica se il numero e pari-------------
-
 
 function sePari(numnero){
     if(numnero % 2 === 0 ){
@@ -65,8 +61,9 @@ function sePari(numnero){
 
 }
 
-sePari(4);
 
+
+sePari(4);
 
 function test1(){
     alert("Questo è un test");
@@ -86,3 +83,35 @@ function calcolo(a,b,funzDiCalcolo){
 }
 
 console.log(calcolo(40,7,divisione));
+
+
+//--------------------------------------
+
+function sottrazione(a,b,sottrazione){
+    var risultato = a-b;
+    return risultato;
+}
+function divisione(a,b,divisione){
+    var risultato = a/b;
+    return risultato;
+}
+function moltiplicazione(a,b,moltiplicazione){
+    var risultato = a*b;
+    return risultato;
+}
+function calcolo(a,b,tipoDiCalcolo){
+    var risultato = tipoDiCalcolo(a,b);
+    return risultato;
+}
+// la funzione modulo da il resto
+function modulo(a,b){
+    return a % b;
+}
+
+console.log("il risultato della somma è:" + calcolo(200,100,somma2));
+console.log("il risultato della moltiplicazione è:" + calcolo(100,5,moltiplicazione));
+console.log("il risultato della divisione è:" + calcolo(400,2,divisione));
+console.log("il risultato della sottrazione è:" + calcolo(100,50,sottrazione));
+console.log("il risultato del modulo tra 500 e 400 è:"+ calcolo(500,400,modulo));
+
+

@@ -6,9 +6,19 @@ const lista = document.getElementById('miaLista');
 const bottoneSvuota = document.getElementById('svuota');
 const bottoneSalva = document.getElementById('saveButton');
 
+function salvaListainJson(){
+    const elementi = [];
+}
+
+Array.from(lista.children).forEach((elemento) =>{
+    if(elemento.id !== 'messaggioVuota'){
+        elementiLista.push(elemento.textContent.replace('🗑️','').trim());
+    }
+});
+    
+
 
 console.log(lista.children.length);
-
 
 bottoneAggiungi.addEventListener('click', function () {
     
@@ -83,3 +93,4 @@ bottoneSalva.addEventListener('click', salvaLista);
 
 
 controllaSeListaVuota();
+
