@@ -9,7 +9,7 @@ p2 = parola2;
 let lunghezzaParola1 = p1.length;
 let lunghezzaParola2 = p2.length;
 
-//controllo lunghezza
+//confronto la lunghezza
     if (lunghezzaParola1 !== lunghezzaParola2){
         return false
     }
