@@ -61,4 +61,5 @@ console.log(ordine);
 let word1 = "roma";
 let word2 = "amor";
 //split fa il contrario di join
-console.log(word1.split(""));
+console.log(word1.split("").sort());
+console.log(word2.split("").sort());
