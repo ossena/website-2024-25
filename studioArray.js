@@ -24,16 +24,16 @@ console.log("La lunghezza di array1 é:"+ array1.length);
 //per accedere all'ultimo elemento
 let ultimoElementoFrutta = elencoFrutta[elencoFrutta.length - 1];
 
-//push aggiunge un elemento all'array
+//push aggiunge un elemento all'array alla fine
 elencoFrutta.push("cachi");
 console.log(elencoFrutta);
 
 console.log(ultimoElementoFrutta);
 
-//toglie primo elemento
+//toglie primo elemento (shift)
 elencoFrutta.shift();
 console.log(elencoFrutta);
-//inserice elemento all inizio unshift
+//inserice elemento all inizio (unshift)
 elencoFrutta.unshift("pompelmo");
 console.log(elencoFrutta);
 //toglie l'ultimo
@@ -44,3 +44,21 @@ console.log(elencoFrutta);
 // function Esempio(a,b,c){
 // 	return (a + b)/c};
 // console.log(Esempio(10,40,2));
+
+
+let lettere = ["C","I","A","O"];
+
+let paroleJoin = lettere.join("")
+console.log(paroleJoin);//stampa CIAO
+
+
+let ordine = ["Z","F","K","A"];
+console.log(ordine);
+
+ordine.sort();
+console.log(ordine);
+
+let word1 = "roma";
+let word2 = "amor";
+//split fa il contrario di join
+console.log(word1.split(""));
