@@ -1,0 +1,11 @@
+{
+  "name": "website-2024-25",
+  "version": "1.0.0",
+  "description": "lezione backend",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ossena Alessandro",
+  "license": "ISC"
+}
